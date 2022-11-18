@@ -25,7 +25,11 @@ enabled S_CURVE_ACCELERATION enabled LCD_BED_TRAMMING to help assist with trammi
 enabled INDIVIDUAL_AXIS_HOMING_MENU to turn on individual axis hominh which can be useful over having everything be homed at the same time (example home the X axis so you can then work on the bed surface if youhad to cancel a print and it didn't move the print head out of your way.
 I am currently waiting on adapter cables from TH3D to allow me to plug the stock 5 pin connector cables for the motors into the replacement 4.2.7 but the firmware I compiled works, and drives the Ender-2 Pro screen with no issues, and it is seeing the thermistors for the hot end and the heated bed.
 
-I should have the adapters in hand by Thursday Evening and I'll get them installed and do some test prints on the printer through octoprint on Friday 11-18-22
+After waiting on 5 pin to four pin motor adapter cables that I ordered from TH3D to adapt the cables to work on the 4.2.7 mainboard came (https://www.th3dstudio.com/product/ender-2-pro-stepper-motor-adapter-cable-4-pack/) in I was finally able to fully test out my firmware and after making some adjustments to the initial config files I provided It is now working fully.
+
+Thw code also now has host controls turned on, and I have turned on the head park feature and the M600 filament change command.
+
+Octoprint is running well on this firmware, no more stuttering issues.
 
 I do not plan on keeping this code updated and current from the marlin repository, so If you wish to do so, use the config files I have in the marlin folder to build your own branch of the code.
 
