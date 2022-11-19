@@ -20,12 +20,12 @@ The major changes for the config files are as follows.
 
 used the status screen and boot screen config files from the Ender-2-Pro V4.2.3 config to make sure the screen shows the correct info in the upper left corner for the status screen 
 edited the custom name so the info at the bottom of the screen shows Ender-2 Pro 4.2.7 ready
-edited the max sizes for X,y, and Z to be the correct sizes for a Ender-2 Pro edit the x, and y min positions to match the ones set in the config for the Ender-2 Pro 4.2.3 mainboard
+edited the max sizes for X,Y, and Z to be the correct sizes for a Ender-2 Pro edit the x, and y min positions to match the ones set in the config for the Ender-2 Pro 4.2.3 mainboard
 enabled S_CURVE_ACCELERATION enabled LCD_BED_TRAMMING to help assist with tramming the bed corners. increased the baud rate for the serial connection to 250000, I am not sure if this will help so I may revert this change after testing it to see if it makes a difference.
-enabled INDIVIDUAL_AXIS_HOMING_MENU to turn on individual axis hominh which can be useful over having everything be homed at the same time (example home the X axis so you can then work on the bed surface if youhad to cancel a print and it didn't move the print head out of your way.
-I am currently waiting on adapter cables from TH3D to allow me to plug the stock 5 pin connector cables for the motors into the replacement 4.2.7 but the firmware I compiled works, and drives the Ender-2 Pro screen with no issues, and it is seeing the thermistors for the hot end and the heated bed.
+enabled INDIVIDUAL_AXIS_HOMING_MENU to turn on individual axis homing which can be useful over having everything be homed at the same time (example: home the X axis so you can then work on the bed surface if youhad to cancel a print and it didn't move the print head out of your way.
 
-After waiting on 5 pin to four pin motor adapter cables that I ordered from TH3D to adapt the cables to work on the 4.2.7 mainboard came (https://www.th3dstudio.com/product/ender-2-pro-stepper-motor-adapter-cable-4-pack/) in I was finally able to fully test out my firmware and after making some adjustments to the initial config files I provided It is now working fully.
+After waiting on 5 pin to four pin motor adapter cables that I ordered from TH3D to adapt the cables to work on the 4.2.7 mainboard to arrive (https://www.th3dstudio.com/product/ender-2-pro-stepper-motor-adapter-cable-4-pack/),
+I was finally able to fully test out my firmware and after making some adjustments to the initial config files I provided, It is now working fully.
 
 Thw code also now has host controls turned on, and I have turned on the head park feature and the M600 filament change command.
 
